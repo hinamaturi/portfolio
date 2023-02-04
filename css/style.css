@@ -261,6 +261,12 @@ select::-ms-expand {
   color: #fffbf7;
 }
 
+.link {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  font-weight: 600;
+}
+
 .btn {
   position: relative;
   width: 230px;
@@ -353,7 +359,6 @@ select::-ms-expand {
 .wp-pagenavi span {
   line-height: 1.4;
   display: inline-block;
-  color: #131313;
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 8px 12px;
