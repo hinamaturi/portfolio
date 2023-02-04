@@ -1,0 +1,14 @@
+@use "sass:math";
+// 文字フォントの種類
+$base-font: 'Zen Kaku Gothic New',sans-serif;
+$jp-font:'Shippori Mincho',sans-serif;
+$mv-font:'Parisienne','cursive';
+$en-font:'Cinzel Decorative','cursive';
+
+
+
+// 文字の太さ
+$regular: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
