@@ -911,26 +911,44 @@ select::-ms-expand {
 .service__items {
   margin-top: 50px;
 }
+@media screen and (max-width: 768px) {
+  .service__items {
+    display: block;
+  }
+}
 
 .service__item {
   position: relative;
   max-width: 300px;
-  margin-bottom: 40px;
+  width: 30%;
   margin-bottom: 40px;
   border-radius: 180px 180px 0 0;
   background: #fffbf7;
+  margin-right: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .service__item {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 768px) {
   .service__item {
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
+    margin-inline: auto;
   }
 }
-.service__item:not(:nth-child(3)) {
-  margin-right: 30px;
+.service__item:nth-child(3) {
+  margin-right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .service__item:nth-child(3) {
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
-  .service__item:not(:nth-child(3)) {
-    margin-right: 0;
+  .service__item:nth-child(3) {
+    margin-inline: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1164,6 +1182,12 @@ select::-ms-expand {
   padding-bottom: 15px;
   border-bottom: 3px solid #DDD;
 }
+@media screen and (max-width: 768px) {
+  .works-detail__ttl {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+}
 
 .works-detail__ttl::after {
   position: absolute;
@@ -1177,21 +1201,50 @@ select::-ms-expand {
 .works-detail__wrap {
   margin-top: 50px;
 }
+@media screen and (max-width: 1024px) {
+  .works-detail__wrap {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+}
 
 .works-detail__img02 {
   width: 50%;
 }
+@media screen and (max-width: 1024px) {
+  .works-detail__img02 {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+  }
+}
 
 .works-detail__txtarea {
   width: 44%;
+}
+@media screen and (max-width: 1024px) {
+  .works-detail__txtarea {
+    width: 100%;
+    display: block;
+  }
 }
 
 .works-detail__tbl td {
   border-bottom: 1px solid #cac0ae;
   padding: 5px 20px 20px;
 }
+@media screen and (max-width: 768px) {
+  .works-detail__tbl td {
+    padding: 5px 0 15px;
+  }
+}
 .works-detail__tbl th {
   padding: 20px 20px 5px;
+}
+@media screen and (max-width: 768px) {
+  .works-detail__tbl th {
+    padding: 15px 0 5px;
+  }
 }
 .works-detail__tbl th, .works-detail__tbl td {
   display: block;

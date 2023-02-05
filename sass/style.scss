@@ -678,22 +678,33 @@
 
 .service__items {
   margin-top: 50px;
-  
+  @include mq("md") {
+    display: block;
+  }
 }
 .service__item{
   position: relative;
   max-width: 300px;
-  margin-bottom: 40px;
+  width: 30%;
   margin-bottom: 40px;
   border-radius: 180px 180px 0 0;
   background: $white;
-  @include mq("md") {
-    width: 280px;
+  margin-right: 30px;
+  @include mq("lg") {
+    width: 40%;
   }
-  &:not(:nth-child(3)){
-    margin-right: 30px;
+  @include mq("md") {
+    max-width: 280px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  &:nth-child(3){
+    margin-right:0;
+    @include mq("lg") {
+      margin-right: 30px;
+    }
     @include mq("md") {
-      margin-right:0;
+      margin-inline: auto;
     }
   }
   &:last-child{
@@ -907,6 +918,10 @@
   position: relative;
   padding-bottom: 15px;
   border-bottom: 3px solid #DDD;
+    @include mq("md") {
+      font-size: 18px;
+      margin-top: 30px;
+    }
 }
 .works-detail__ttl::after {
   position: absolute;
@@ -918,20 +933,39 @@
 }
 .works-detail__wrap{
   margin-top: 50px;
+  @include mq("lg") {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
 }
 .works-detail__img02{
   width: 50%;
+  @include mq("lg") {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+  }
 }
 .works-detail__txtarea{
   width: 44%;
+  @include mq("lg") {
+    width: 100%;
+    display: block;
+  }
 }
 .works-detail__tbl{
   td{
     border-bottom: 1px solid $beige;
     padding: 5px 20px 20px;
+    @include mq("md") {
+      padding: 5px 0 15px;
+    }
   }
   th{
     padding: 20px 20px 5px;
+    @include mq("md") {
+      padding: 15px 0 5px;
+    }
   }
   th,td{
     display: block;

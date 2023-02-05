@@ -5,7 +5,10 @@ $(function () {
     $(".js-drawer").fadeToggle();
   });
 });
-
+// ハンバーガーのページ内リンク
+  $('a[href*="#"]').on('click', function() {  
+    $('.js-hamburger').removeClass('is-active');
+  });
 
 // header 色変更
 $(function () {
