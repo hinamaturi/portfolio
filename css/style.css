@@ -369,7 +369,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 767px) {
   .wp-pagenavi a,
-.wp-pagenavi span {
+  .wp-pagenavi span {
     font-size: 13px;
   }
 }
@@ -644,29 +644,7 @@ select::-ms-expand {
   width: 100%;
   height: 100vh;
   background: #cac0ae;
-  -webkit-animation: bgchange 10s ease infinite;
-          animation: bgchange 10s ease infinite;
-}
-
-@-webkit-keyframes bgchange {
-  0% {
-    background: #dbcfba;
-  }
-  25% {
-    background: #cabba4;
-  }
-  50% {
-    background: #ceb29b;
-  }
-  75% {
-    background: #c7ada1;
-  }
-  90% {
-    background: #dfc8bb;
-  }
-  100% {
-    background: #dbd0bc;
-  }
+  animation: bgchange 10s ease infinite;
 }
 
 @keyframes bgchange {
@@ -725,6 +703,25 @@ select::-ms-expand {
   max-width: 430px;
   height: auto;
   border-radius: 220px 220px 0 0;
+}
+
+/* fadeIn */
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 2.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+.second {
+  animation-delay: 1s;
+}
+
+.third {
+  animation-delay: 2s;
 }
 
 .mv__ttl-wrap {
@@ -866,24 +863,10 @@ select::-ms-expand {
 }
 
 .fadeUp {
-  -webkit-animation-name: fadeUpAnime;
-          animation-name: fadeUpAnime;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: fadeUpAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
   opacity: 0;
-}
-
-@-webkit-keyframes fadeUpAnime {
-  from {
-    opacity: 0;
-    transform: translateY(150px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @keyframes fadeUpAnime {
@@ -1350,4 +1333,4 @@ select::-ms-expand {
 }
 .form__btn:hover {
   color: #fffbf7;
-}
+}/*# sourceMappingURL=style.css.map */

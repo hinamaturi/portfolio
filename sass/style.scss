@@ -517,6 +517,24 @@
     border-radius: 220px 220px 0 0;
   }
 }
+
+/* fadeIn */
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 2.5s ease forwards;
+}
+@keyframes fadeIn {
+  100% {  opacity: 1;}
+}
+
+.second {
+  animation-delay: 1s;
+  }
+.third {
+  animation-delay: 2s;
+  }
+
+
 .mv__ttl-wrap{
   width: 60%;
   @include mq("md") {
